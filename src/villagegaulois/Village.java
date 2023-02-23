@@ -43,14 +43,16 @@ public class Village {
 		StringBuilder chaine = new StringBuilder();
 		if (nbVillageois < 1) {
 			chaine.append("Il n'y a encore aucun habitant au village du chef "
-					+ chef.getNom() + ".\n");}
+					+ chef.getNom() + ".\n");
+			System.out.println("la");}
 		else {
 			chaine.append("Au village du chef " + chef.getNom()
 					+ " vivent les légendaires gaulois :\n");
 			for (int i = 0; i < nbVillageois; i++) {
 				chaine.append("- " + villageois[i].getNom() + "\n");}
 		}
-		return chaine.toString();}
+		return chaine.toString();
+		}
 	
 	
 	private static class Marchee{
